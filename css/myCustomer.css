@@ -1,0 +1,28 @@
+@media screen and (max-width: 480px) {
+    img.imgDivVid{
+        min-width: 490px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    img.imgDivVid{
+        min-width: 748px;
+        position: relative;
+        top: -116px;
+        left: -0px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    img.imgDivVid{
+        top: -10px;
+        left: -184px;
+    }
+}
+
+@media screen and (min-width: 1270px) {
+    img.imgDivVid{
+        min-width: 1000px;
+        left: -256px;
+    }
+}

@@ -1,0 +1,383 @@
+html {overflow-y: scroll;}
+
+body,html {height:100%; margin:0px auto; background:#fafafa;}
+
+img {width:100%; height:auto; object-fit:contain; overflow: hidden;}
+
+a {text-decoration:none;}
+a:hover {text-decoration: none;}
+
+/*nav Head*/
+.nav {width:100%; height:80px; background:#FFF; display:block; top:0px; left:0px; position:fixed; border-bottom:solid 10px #232946; z-index:50;}
+.logo {width:245px; height:100%; margin:10px; float:left; background:url(../images/logo.png) top center no-repeat; background-size:100%; position:relative; display:block;}
+.TEL {width:auto; height:55px; line-height:55px; font-family:Century Gothic; font-size:15px; color:#AAA; float:right; margin:15px 10px auto auto;}
+.TELText {width:auto; height:55px; line-height:55px; font-family:Century Gothic; font-size:15px; color:#AAA; float:right; margin:15px 5px auto auto;}
+.TELIcon {width:15px; height:15px; background:url(../images/tel_icon.png) 0px 0px no-repeat; margin:35px 5px auto auto; background-size:100%; float:right; display:block;}
+
+@media (max-width: 800px) {
+.nav {height:70px;}
+.logo {width:200px;}
+}
+
+@media (max-width: 480px) {
+.nav {height:70px;}
+.logo {width:160px;}
+.TEL {width:auto; height:35px; line-height:35px; font-size:12px;}
+.TELText {width:auto; height:35px; line-height:35px; font-size:12px;}
+.TELIcon {width:13px; height:13; margin:25px 5px auto auto;}
+}
+
+@media (max-width: 375px) {
+.nav {height:60px;}
+.logo {width:150px;}
+}
+
+@media (max-width: 320px) {
+.TEL {width:auto; height:35px; line-height:35px; font-size:13px;}
+.TELText {display:none;}
+}
+
+.container {width:100%; max-width:1920px; height:auto; margin:0px auto; background:#000; position:relative; clear:both;}
+
+/*輪播Banner*/
+.banner {width:100%; height:450px; overflow:hidden; position:relative; margin:80px auto auto 0px;}
+.owl-theme .item a{ height: 450px; }
+.owl-theme .owl-dots{ margin-top: -50px; }
+.b-img {height:450px; position:absolute; left:0px; top:0px;}
+.b-img a {display:block; height:450px; float:left;}
+.b-list {height:50px; position:relative; margin:400px auto auto auto; z-index:1;}
+.b-list span {display:block; cursor:pointer; width:14px; height:14px; border-radius:50%; border:3px solid #fff; float:left; margin:0px 5px; margin:0px 3px;}
+.b-list .spcss {border:3px solid #0FF;}
+.bar-left {position:absolute; z-index:1; display:block; width:100px; height:100%; left:0px; background:none; top:0px;}
+.bar-right {position:absolute; z-index:1; display:block; width:100px; height:100%; right:0px; background:none; top:0px;}
+.bar-left em {display:block; width:50px; height:100px; background:url(../images/l_arrow_1.png) 0px 0px no-repeat; background-size:100%; margin:0px auto; margin-top:150px;}
+.bar-right em {display:block; width:50px; height:100px; background:url(../images/r_arrow_1.png) 0px 0px no-repeat; background-size:100%; margin:0px auto; margin-top:150px;}
+.bar-left .emcss {display:block; width:50px; height:100px; background:url(../images/l_arrow_2.png) 0px 0px no-repeat; background-size:100%; margin:0px auto; margin-top:150px;}
+.bar-right .emcss {display:block; width:50px; height:100px; background:url(../images/r_arrow_2.png) 0px 0px no-repeat; background-size:100%; margin:0px auto; margin-top:150px;}
+
+@media (max-width: 1280px) {
+.banner, .owl-theme .item a, .owl-theme .item img{height:400px;}
+.b-img {height:400px;}
+.b-img a {height:400px;}
+.b-list {margin:350px auto auto auto;}
+.bar-left em {margin-top:150px;}
+.bar-right em {margin-top:150px;}
+.bar-left .emcss {margin-top:150px;}
+.bar-right .emcss {margin-top:150px;}
+}
+
+@media (max-width: 1024px) {
+.banner, .owl-theme .item a, .owl-theme .item img{height:350px;}
+.b-img {height:350px;}
+.b-img a {height:350px;}
+.b-list {margin:300px auto auto auto;}
+.bar-left em {margin-top:100px;}
+.bar-right em {margin-top:100px;}
+.bar-left .emcss {margin-top:100px;}
+.bar-right .emcss {margin-top:100px;}
+}
+
+@media (max-width: 720px) {
+.banner, .owl-theme .item a, .owl-theme .item img{height:300px;}
+.b-img {height:300px;}
+.b-img a {height:300px;}
+.b-list {margin:250px auto auto auto;}
+.bar-left em {margin-top:80px;}
+.bar-right em {margin-top:80px;}
+.bar-left .emcss {margin-top:80px;}
+.bar-right .emcss {margin-top:80px;}
+.owl-theme .owl-dots{ margin-top: -40px; }
+}
+
+@media (max-width: 640px) {
+.banner {height:250px; }
+.owl-theme .item a, .owl-theme .item img{ height: 250px; margin-top: 0; }
+.b-img {height:250px;}
+.b-img a {height:250px;}
+.b-list {margin:200px auto auto auto;}
+.bar-left {width:50px;}
+.bar-right {width:50px;}
+.bar-left em {width:30px; height:60px; margin-top:80px;}
+.bar-right em {width:30px; height:60px; margin-top:80px;}
+.bar-left .emcss {width:30px; height:60px; margin-top:80px;}
+.bar-right .emcss {width:30px; height:60px; margin-top:80px;}
+.owl-theme .owl-dots{ margin-top: -30px; }
+}
+
+@media (max-width: 480px) {
+.banner{height:180px;}
+.owl-theme .item a, .owl-theme .item img{height: 180px;}
+.b-img {height:180px;}
+.b-img a {height:180px;}
+.b-list {margin:150px auto auto auto;}
+.bar-left {width:50px;}
+.bar-right {width:50px;}
+.bar-left em {width:30px; height:60px; margin-top:80px;}
+.bar-right em {width:30px; height:60px; margin-top:80px;}
+.bar-left .emcss {width:30px; height:60px; margin-top:80px;}
+.bar-right .emcss {width:30px; height:60px; margin-top:80px;}
+.owl-theme .owl-dots{ margin-top: -25px; }
+}
+
+@media (max-width: 375px) {
+.banner{margin:60px auto auto 0px;}
+}
+
+
+/*保險*/
+.insuranceBOX1 {width:40%; height:500px; margin:5px auto 0px auto; float:left; position:relative; display:block; overflow:hidden;}
+.insuranceBOX2 {width:60%; height:500px; margin:5px auto 0px auto; float:left; position:relative; display:block; overflow:hidden;}
+
+.insuranceBOX1>video {min-height:500px; position:absolute; bottom:0px; left:0px; z-index:1; background-size:cover;}
+.insuranceBOX2>video {min-height:500px; position:absolute; bottom:0px; left:0px; z-index:1; background-size:cover;}
+
+
+.ColorMask1 {width:100%; height:100%; display:block; position:absolute; top:0px; left:0px; background:#74bad3; z-index:2; opacity:0.5; cursor:pointer;}
+.ColorMask1:hover {
+animation-name: FadeMov;
+animation-duration:2s;
+animation-iteration-count:1;
+animation-fill-mode:forwards;
+}
+
+.ColorMask2 {width:100%; height:100%; display:block; position:absolute; top:0px; left:0px; background:#4e4c70; z-index:2; opacity:0.5; cursor:pointer;}
+.ColorMask2:hover {
+animation-name: FadeMov;
+animation-duration:2s;
+animation-iteration-count:1;
+animation-fill-mode:forwards;
+}
+
+.more {width:284px; height:68px; display:block; position:absolute; bottom:10px; right:10px; background:url(../images/more.png) top center no-repeat; background-size:100%; z-index:25; pointer-events:none;}
+
+@keyframes FadeMov
+{
+0%   {opacity:0.5;}
+100% {opacity:0;}
+}
+
+@-o-keyframes FadeMov /* Opera */
+{
+0%   {opacity:0.5;}
+100% {opacity:0;}
+}
+
+@-ms-keyframes FadeMov /* IE */
+{
+0%   {opacity:0.5;}
+100% {opacity:0;}
+}
+
+@-moz-keyframes FadeMov /* Firefox */
+{
+0%   {opacity:0.5;}
+100% {opacity:0;}
+}
+
+@-webkit-keyframes FadeMov /* Safari 和 Chrome */
+{
+0%   {opacity:0.5;}
+100% {opacity:0;}
+}
+
+.STitle {width:90%; z-index:20; display:block; position:absolute; top:40%; left:5%; margin:0px auto; pointer-events:none; z-index:10;}
+.STitle_BT {width:100%; font-size:35px; font-family:"微軟正黑體"; color:#FFF; font-weight:bolder; float:left;}
+.STitle_ET {width:100%; font-size:25px; font-family:Century Gothic; color:#FFF; float:left;}
+.STitle>hr {width:200px; height:2px; border:0px; background:#FFF; float:left;}
+
+
+@media (max-width: 1280px) {
+.insuranceBOX1 {height:400px;}
+.insuranceBOX2 {height:400px;}
+.insuranceBOX1>video {left:-100px;}
+}
+
+@media (max-width: 1024px) {
+.insuranceBOX1 {width:100%;}
+.insuranceBOX2 {width:100%;}
+.insuranceBOX1>video {left:0px; bottom:-50px;}
+.STitle {top:30%;}
+}
+
+@media (max-width: 720px) {
+.insuranceBOX1 {height:300px;}
+.insuranceBOX2 {height:300px;}
+.STitle {top:20%;}
+}
+
+@media (max-width: 640px) {
+.STitle {top:15%;}
+}
+
+@media (max-width: 480px) {
+.insuranceBOX1 {height:250px;}
+.insuranceBOX2 {height:250px;}
+.STitle {top:10%;}
+.STitle_BT {font-size:30px;}
+.STitle_ET {font-size:20px;}
+.STitle>hr {width:170px;}
+.more {width:180px; height:43px;}
+}
+
+
+/*Careline Menu*/
+.CarelineMenu {width:100%; height:auto; margin:0px auto 60px auto; position:relative; background-color:#d7d7d7; float:left;}
+.CarelineMenuBox {max-width:1024px; height:auto; margin:50px auto; overflow:hidden;}
+.CarelineMenuBox .IconBOX {width:25%; height:auto; float:left; display:block; overflow:hidden; position:relative;}
+.CarelineMenuBox a {width:140px; height:auto; margin:0px auto; text-align:center; display:block; font-size:22px; font-family:"微軟正黑體"; color:#666;}
+.CarelineMenuBox a .IMG {width:140px; margin:0px auto; background-size:100%;}
+
+@media (max-width: 640px) {
+.CarelineMenuBox {margin:40px auto;}
+.CarelineMenuBox a {width:100px;}
+.CarelineMenuBox a .IMG {width:100px;}
+}
+
+@media (max-width: 480px) {
+.CarelineMenuBox a {width:70px;}
+.CarelineMenuBox a .IMG {width:70px;}
+}
+
+
+/*路徑*/
+.PATCH {width:100%; height:60px; margin:80px auto auto auto; position:relative; line-height:60px; text-indent:20px; font-size:13px; color:#999;}
+.PATCH a {color:#ccc;}
+.PATCH a:hover {color:#999;}
+
+
+.TITLE {width:100%; height:auto; margin:0px auto; float:left; position:relative; font-size:30px; font-family:"微軟正黑體"; color:#e84466; font-weight:bolder; text-align:center;}
+.PAGEPIC {max-width:1400px; height:auto; margin:0px auto; float:left; position:relative; overflow:hidden;}
+
+
+
+/*AboutUS*/
+.AboutUS {max-width:1400px; height:auto; overflow:hidden; margin:90px auto auto auto; position:relative;}
+.AboutUSText {max-width:1400px; height:auto; margin:50px 20px 80px 20px; float:left; position:relative; font-size:15px; font-family:"微軟正黑體"; color:#999;}
+
+@media (max-width: 800px) {
+.AboutUS {margin:80px auto auto auto;}
+}
+
+@media (max-width: 375px) {
+.AboutUS {margin:70px auto auto auto;}
+}
+
+/*Mascot Story*/
+.MascotStory {max-width:1400px; height:auto; overflow:hidden; margin:90px auto; position:relative;}
+.MascotStoryBox {max-width:1400px; height:auto; margin:50px auto auto auto; float:left; position:relative; font-size:15px; font-family:"微軟正黑體"; color:#999;}
+.MascotPIC {width:45%; height:auto; margin:0px auto; float:left; position:relative;}
+.MascotInfo {width:50%; height:auto; margin:0px 10px; float:left; position:relative; font-size:15px; font-family:"微軟正黑體"; color:#999; line-height:30px;}
+.MascotInfo .T1 {font-size:24px; font-weight:bold; color:#666;}
+.MascotInfo .T2 {font-weight:bold; color:#666;}
+
+@media (max-width: 800px) {
+.MascotStory {margin:80px auto auto auto;}
+}
+
+@media (max-width: 640px) {
+.MascotPIC {width:100%;}
+.MascotInfo {width:98%;}
+}
+
+@media (max-width: 375px) {
+.AboutUS {margin:70px auto auto auto;}
+}
+
+
+
+
+/*Copyright*/
+.Footer {width:100%; height:60px; bottom:0px; left:0px; display:block; position:fixed; background:#999; z-index:50;}
+.Copyright {width:auto; height:auto; line-height:60px; font-family:Century Gothic; font-size:14px; color:#FFF; margin:0px auto; text-align:center; z-index:10;}
+.Copyright375 {width:auto; height:auto; line-height:18px; font-family:Century Gothic; font-size:13px; color:#FFF; margin:10px auto auto 10px; z-index:10; display:none;}
+.fbIcon {width:48px; height:48px; top:5px; right:10px; background:url(../images/fb_icon.png) top center no-repeat; background-size:100%; position:absolute; display:block;}
+
+@media (max-width: 640px) {
+.Copyright {text-align:left; text-indent:10px;}
+}
+
+@media (max-width: 640px) {
+.Copyright {font-size:12px;}
+}
+
+@media (max-width: 420px) {
+.Copyright {display:none;}	
+.Copyright375 {display:block; float:left;}
+}
+
+
+/*banner*/
+.owl-theme{
+	position: relative;
+}
+.owl-theme .item a{
+	display: block;
+}
+.owl-theme .item a img{
+	height: 450px;
+}
+.owl-theme .owl-nav{
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	margin-top: -50px;
+	background: transparent;
+	color: transparent;
+}
+.owl-theme .owl-nav [class*='owl-']{
+	background: transparent;
+	color: transparent;
+}
+.owl-theme .owl-nav [class*='owl-']:hover{
+	background: transparent;
+	color: transparent;
+}
+.owl-prev{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.owl-prev::before{
+	content: "";
+	display: block;
+    width: 50px;
+    height: 100px;
+    background: url(../images/l_arrow_1.png) 0px 0px no-repeat;
+    background-size: 100%;
+}
+.owl-next{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.owl-next::before{
+	content: "";
+	display: block;
+    width: 50px;
+    height: 100px;
+    background: url(../images/r_arrow_1.png) 0px 0px no-repeat;
+    background-size: 100%;
+}
+.owl-theme .owl-dots{
+	position: relative;
+}
+.owl-theme .owl-dots .owl-dot span{
+	display: block;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    float: left;
+    margin: 0px 5px;
+    margin: 0px 3px;
+    background: transparent;
+}
+.owl-theme .owl-dots .owl-dot span:hover{
+    background: transparent;
+    border: 3px solid #0FF
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+	background: transparent;
+    border: 3px solid #0FF
+}
